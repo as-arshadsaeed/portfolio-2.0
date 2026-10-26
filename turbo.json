@@ -1,0 +1,33 @@
+{
+  "$schema": "https://v2-9-16.turborepo.dev/schema.json",
+
+  "globalEnv": [
+    "SANITY_STUDIO_PROJECT_ID",
+    "SANITY_STUDIO_DATASET",
+    "SANITY_PROJECT_ID",
+    "SANITY_DATASET",
+    "SANITY_API_VERSION",
+    "SANITY_REVALIDATE_SECRET",
+    "SANITY_API_TOKEN",
+    "SENTRY_ORG",
+    "SENTRY_PROJECT",
+    "SENTRY_AUTH_TOKEN",
+    "SENTRY_DSN"
+  ],
+
+  "tasks": {
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [".next/**", "dist/**", ".sanity/**"]
+    },
+
+    "lint": {},
+
+    "typecheck": {}
+  }
+}

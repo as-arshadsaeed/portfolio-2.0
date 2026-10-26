@@ -1,0 +1,17 @@
+{
+  "name": "@portfolio/saas",
+  "private": true,
+  "packageManager": "pnpm@10.22.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.41",
+    "turbo": "^2.9.16"
+  }
+}
